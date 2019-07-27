@@ -47,6 +47,15 @@ border: green 1px solid !important;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 90px;
-  border: orange 1px solid
+  align-items: center;
+  height: 45px;
 }
+
+
+.label {
+  width: 5px;
+  height: 3px;
+}
+
+
+

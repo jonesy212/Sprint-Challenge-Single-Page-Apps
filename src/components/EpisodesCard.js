@@ -6,7 +6,7 @@ function EpisodesCard(props) {
 
     return (
 
-    <Card>
+    <Card className= 'card-container'>
         <div className= "card " >
         <Card.Content header>
             <h3 className= 'name'>{props.name}</h3>
