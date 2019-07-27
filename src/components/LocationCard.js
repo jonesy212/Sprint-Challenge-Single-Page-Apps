@@ -1,18 +1,26 @@
 import React from 'react'
+import { Card } from 'semantic-ui-react'
 
-LocationCard = props => {
-
+function LocationCard (props) {
+console.log(props)
   return (
-    <div>
-        <img src= {props.image} 
-        />
-        <div>{props.name}</div>
-      <div>{props.type}</div>
-      <div>{props.dimension}</div>
-      <div>{props.resident}</div>
-    </div>
-
+    <Card>
+      <div className= "card " >
+      <Card.Content header>
+          <h3 className= 'dimension'>{props.dimension}</h3>
+        </Card.Content>
+        <Card.Content header>
+          <p className= 'name'>{props.name} - {props.type}</p>
+        </Card.Content>
+        <Card.Content header>
+          <p className= 'residents'>{props.residents.length} residents</p>
+        </Card.Content>
+      </div>
+    </Card>
     )
  }
   
-  export default LocationCard;
+  export default LocationCard
+
+
+

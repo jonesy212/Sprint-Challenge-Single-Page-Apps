@@ -1,20 +1,31 @@
-import { useEffect} from 'react';
+import React, { useEffect, useState} from 'react'
 import axios from 'axios'
+import LocationCard from './LocationCard'
 
-export default function LocationsList() {
+function LocationsList() {
 
 
-
+    const [locations, setLocations] = useState([])
     useEffect(() => {
-        const setCharacters = () => {
-          axios.get("https://rickandmortyapi.com/api/locations/")
+      
+          axios.get("https://rickandmortyapi.com/api/location/")
+          
               .then (response => {
-                  setCharacters(response.data);
+                  setLocations(response.data.results);
               })
               .catch(error => {
                 console.log("Error: Please reload screen", error)
               })
-        }
-    })
-    return LocationsList
+    }, [])
+    return (
+        <section className="div.card.ui grid-view">
+          {locations.map(location => {
+            console.log(location)
+            return <LocationCard key={location.id} {...location} />;
+            
+          })}
+          
+          </section>
+    )
 }
+export default LocationsList
