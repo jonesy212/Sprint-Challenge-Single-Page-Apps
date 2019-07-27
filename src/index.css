@@ -27,14 +27,35 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
+
 .main-img {
   display: block;
   border-radius: 100%;
   margin: 0 auto;
-} */
+}
 
 header h1 {
   text-align: center;
 
 }
+
+.ui.card:second-child  {
+border: green 1px solid !important;
+}
+
+.card .ui {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 45px;
+}
+
+
+.label {
+  width: 5px;
+  height: 3px;
+}
+
+
+
