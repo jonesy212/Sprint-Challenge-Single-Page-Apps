@@ -97,7 +97,7 @@ Add a Router to this application by using [React Router](https://reacttraining.c
 
 - [X] **Make sure all tasks are complete:** Do a global search (Cmd-Shift-F in VS Code) for the string `TODO:`.
 
-> 💡**reminder:** ` '`
+> 💡**reminder:** `git commit -am 'MVP Completed'`
 
 ### Stretch
 
