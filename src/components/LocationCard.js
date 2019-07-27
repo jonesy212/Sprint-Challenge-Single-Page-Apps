@@ -1,7 +1,18 @@
 import React from 'react'
 
-export default function LocationCard ({ name, type, dimension, residents }) {
-  // image={image}
-  return (<span>todo: location</span>
-  )
-}
+LocationCard = props => {
+
+  return (
+    <div>
+        <img src= {props.image} 
+        />
+        <div>{props.name}</div>
+      <div>{props.type}</div>
+      <div>{props.dimension}</div>
+      <div>{props.resident}</div>
+    </div>
+
+    )
+ }
+  
+  export default LocationCard;
